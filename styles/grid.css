@@ -1,0 +1,45 @@
+/* ---------- CSS grid ---------- */
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile: */
+[class*="col-"] {
+    width: 100%;
+    padding: 0px 10px;
+    float: left;
+}
+
+/* For tablet: */
+@media only screen and (min-width: 768px) {
+    .col-1  {width:  8.33%;}
+    .col-2  {width: 16.66%;}
+    .col-3  {width:    25%;}
+    .col-4  {width: 33.33%;}
+    .col-5  {width: 41.66%;}
+    .col-6  {width:    50%;}
+    .col-7  {width: 58.33%;}
+    .col-8  {width: 66.66%;}
+    .col-9  {width:    75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width:   100%;}
+}
+
+/* For desktop: full */
+@media only screen and (min-width: 1100px) {
+    .col-1-f  {width:  8.33%;}
+    .col-2-f  {width: 16.66%;}
+    .col-3-f  {width:    25%;}
+    .col-4-f  {width: 33.33%;}
+    .col-5-f  {width: 41.66%;}
+    .col-6-f  {width:    50%;}
+    .col-7-f  {width: 58.33%;}
+    .col-8-f  {width: 66.66%;}
+    .col-9-f  {width:    75%;}
+    .col-10-f {width: 83.33%;}
+    .col-11-f {width: 91.66%;}
+    .col-12-f {width:   100%;}
+}
