@@ -1,23 +1,27 @@
-/* ----- darkTheme v3 ----- */
+// ----- darkTheme v3 -----
 
-let themeConfig = localStorage.getItem('themeConfig') || 'system'; // Check local
+let themeConfig = localStorage.getItem('themeConfig') || 'system'; // Check localS
+
+function turnDarkBy(condition) {
+	document.documentElement.classList.toggle('dark', condition);
+}
 
 function updateTheme(config) {
-  let turnDark = false;
+	let darkOn = false;
 
-  if (config === 'dark') {
-    turnDark = true;
-  } else if (config === 'system') {
-    turnDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  document.documentElement.classList.toggle('dark', turnDark);
-  localStorage.setItem('themeConfig', config);
-  themeConfig = config;
+	if (config === 'dark') {
+		darkOn = true; }
+	else if (config === 'system') {
+		darkOn = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	}
+	turnDarkBy(darkOn);
+	localStorage.setItem('themeConfig', config);
+	themeConfig = config;
 }
 
 updateTheme(themeConfig); // Initial update theme
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
 	if (themeConfig === 'system') {
-		document.documentElement.classList.toggle('dark', e.matches);
+		turnDarkBy(e.matches);
 	} // Update the theme when system color scheme changes
 });
