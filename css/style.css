@@ -1,0 +1,22 @@
+/* Light theme */
+:root {
+	--text: #222211;
+	--bg: #EFEFDE;
+	
+	--theme-transition:
+		color 0.3s ease-in-out,
+		background-color 0.3s ease-in-out;
+}
+
+/* Dark theme */
+html.dark-mode {
+	--text: #EFEFEF;
+	--bg: #222211;
+}
+
+/* Element style */
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	transition: var(--theme-transition);
+}
