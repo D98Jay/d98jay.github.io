@@ -1,0 +1,12 @@
+/* Dark theme (for darkScheme or systemPreferDarkScheme) */
+html.dark-mode {
+	--text: #EFEFEF;
+	--bg: #222211;
+	
+	--btn-bg: #333333;
+	--btn-text: #EFEFEF;
+	--btn-border: #777777;
+	--btn-hover-bg: #444444;
+	--btn-hover-text: #FFFFFF;
+	--btn-hover-border: #BBBBBB;
+}

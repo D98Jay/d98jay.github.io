@@ -1,0 +1,36 @@
+/* ------- Design system -------
+
+assets/css/
+├── main.css             # entry point, imports everything (this file)
+├── primitives/
+│   ├── base.css         # breakpoint, grid, animations
+│   ├── color.css        # color palette (solid & transparent)
+│   ├── icons.css        # tabler icon
+│   ├── typography.css   # font family, size, height, weight, styles
+│   ├── shadow.css       # box shadow styles
+│   ├── size.css         # basic sizes, border width, border radius
+├── global.css           # component global sizing, spacing, padding, margin, border, color, typo
+├── themes/
+│   ├── light.css        # default light theme
+│   ├── dark.css         # dark theme (for darkScheme or systemPreferDarkScheme)
+│   ├── ink.css          # black & white theme (WIP)
+├── components.css       # component styles
+*/
+
+/* Primitives variables */
+@import url('./primitives/base.css');
+@import url('./primitives/color.css');
+@import url('./primitives/icons.css');
+@import url('./primitives/typography.css');
+@import url('./primitives/shadow.css');
+@import url('./primitives/size.css');
+
+/* Global variables */
+@import url('./global.css');
+
+/* Theme-specific styles */
+@import url('./themes/light.css');
+@import url('./themes/dark.css');
+
+/* Component styles */
+@import url('./components.css');
