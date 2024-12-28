@@ -1,0 +1,12 @@
+/* Default light theme */
+:root {
+	--text: #222211;
+	--bg: #EFEFDE;
+	
+	--btn-bg: #FFFFFF;
+	--btn-text: #000000;
+	--btn-border: #464646;
+	--btn-hover-bg: #f0f0f0;
+	--btn-hover-text: #222222;
+	--btn-hover-border: #000000;
+}

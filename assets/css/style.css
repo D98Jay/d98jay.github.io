@@ -1,0 +1,63 @@
+/* Light theme variables */
+:root {
+	--text: #222211;
+	--bg: #EFEFDE;
+	
+	--btn-bg: #FFFFFF;
+	--btn-text: #000000;
+	--btn-border: #464646;
+	--btn-hover-bg: #f0f0f0;
+	--btn-hover-text: #222222;
+	--btn-hover-border: #000000;
+}
+
+
+/* Dark theme variables */
+html.dark-mode {
+	--text: #EFEFEF;
+	--bg: #222211;
+	
+	--btn-bg: #333333;
+	--btn-text: #EFEFEF;
+	--btn-border: #777777;
+	--btn-hover-bg: #444444;
+	--btn-hover-text: #FFFFFF;
+	--btn-hover-border: #BBBBBB;
+}
+
+
+/* Theme change animation */
+:root {
+	--theme-transition:
+		color 0.3s ease-in-out,
+		background-color 0.3s ease-in-out;
+	
+	font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	font-weight: normal;
+}
+
+
+/* ------- Element style ------- */
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	transition: var(--theme-transition);
+}
+
+.btn-default {
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	margin: 0.5rem 0rem;
+	font-size: 1rem;
+	background-color: var(--btn-bg);
+	color: var(--btn-text);
+	border: 1px solid var(--btn-border);
+	transition: var(--theme-transition);
+}
+
+.btn-default:hover {
+	background-color: var(--btn-hover-bg);
+	color: var(--btn-hover-text);
+	border: 1px solid var(--btn-hover-border);
+}
